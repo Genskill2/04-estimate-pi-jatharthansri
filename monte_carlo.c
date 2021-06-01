@@ -40,4 +40,20 @@ int main(void) {
 }
 
 
-
+float mc_pi(int n)
+{  
+   int count=0,i;
+   float x,y,z;
+   
+   for(i=1;i<=n;i++)
+    {
+      x=frandom();
+      y=frandom();
+      z=pow((x*x + y*y),0.5);
+      
+      if(z<1){
+        count++; }
+    }
+    
+    return((4.0*count)/n);
+}
