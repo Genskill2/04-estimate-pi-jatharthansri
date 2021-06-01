@@ -39,9 +39,7 @@ int main(void) {
   }
 }
 
-
-float mc_pi(int n)
-{  
+float mc_pi(int n){  
    int count=0,i;
    float x,y,z;
    
@@ -54,6 +52,5 @@ float mc_pi(int n)
       if(z<1){
         count++; }
     }
-    
-    return((4.0*count)/n);
+    return(4.0*count/n);
 }
